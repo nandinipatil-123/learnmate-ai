@@ -1,0 +1,6 @@
+{
+  "name": "LearnMate — Adaptive AI Learning Agent",
+  "description": "Frontend foundation for LearnMate, an adaptive AI learning agent and EdTech dashboard for mastering DBMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
