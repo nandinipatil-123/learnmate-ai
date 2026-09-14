@@ -12,11 +12,13 @@ const PAGE_TITLES: Record<NavPage, { title: string; subtitle: string }> = {
   dashboard: { title: 'Dashboard', subtitle: 'Overview of your DBMS exam readiness' },
   learn: { title: 'Learn with AI Agent', subtitle: 'Adaptive multi-layered topic breakdowns' },
   practice: { title: 'Practice Sandbox', subtitle: 'Solve real exam scenarios with step-by-step guidance' },
-  quiz: { title: 'Adaptive Quiz Engine', subtitle: 'Dynamic difficulty that calibrates to your mastery' },
+  'sql-lab': { title: 'SQL Practice Lab', subtitle: 'Interactive in-browser SQL query execution & auto-evaluator' },
+  quiz: { title: 'DBMS Unit-Wise Quiz', subtitle: '50 targeted exam MCQs organized across all 5 DBMS units' },
   analysis: { title: 'AI Cognitive Analysis', subtitle: 'Real-time diagnostic on concepts, accuracy & velocity' },
   'study-plan': { title: '5-Day Study Plan', subtitle: 'Structured timeline leading to exam day' },
   progress: { title: 'Learning Progress & Mastery', subtitle: 'Granular topic proficiency tracking' },
   settings: { title: 'Preferences & Settings', subtitle: 'Agent behavior, study pacing and notification rules' },
+  posters: { title: 'Poster Learning', subtitle: 'Visual summary posters for every DBMS syllabus topic' },
 };
 
 export const Header: React.FC<HeaderProps> = ({

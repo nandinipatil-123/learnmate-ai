@@ -10,7 +10,9 @@ import {
   Settings,
   Sparkles,
   Flame,
-  X
+  X,
+  Palette,
+  Database
 } from 'lucide-react';
 import { NavPage } from '../types';
 
@@ -31,7 +33,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'learn', label: 'Learn', icon: BookOpen },
     { id: 'practice', label: 'Practice', icon: PenTool },
+    { id: 'sql-lab', label: 'SQL Practice Lab', icon: Database, badge: 'New' },
     { id: 'quiz', label: 'Adaptive Quiz', icon: Gamepad2, badge: 'Live' },
+    { id: 'posters', label: '🎨 Poster Learning', icon: Palette, badge: 'New' },
     { id: 'analysis', label: 'AI Analysis', icon: BrainCircuit },
     { id: 'study-plan', label: 'Study Plan', icon: Target },
     { id: 'progress', label: 'Progress', icon: LineChart },

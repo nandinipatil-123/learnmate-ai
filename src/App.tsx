@@ -15,6 +15,8 @@ import { AIAnalysisPage } from './pages/AIAnalysisPage';
 import { StudyPlanPage } from './pages/StudyPlanPage';
 import { ProgressPage } from './pages/ProgressPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { PosterLearningPage } from './pages/PosterLearningPage';
+import { SqlPracticeLabPage } from './pages/SqlPracticeLabPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<NavPage>('dashboard');
@@ -33,8 +35,12 @@ export default function App() {
         return <LearnPage />;
       case 'practice':
         return <PracticePage />;
+      case 'sql-lab':
+        return <SqlPracticeLabPage />;
       case 'quiz':
         return <AdaptiveQuizPage />;
+      case 'posters':
+        return <PosterLearningPage onNavigate={setCurrentPage} />;
       case 'analysis':
         return <AIAnalysisPage onNavigate={setCurrentPage} />;
       case 'study-plan':
